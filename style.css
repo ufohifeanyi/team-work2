@@ -1,0 +1,891 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    gap: 3rem;
+    padding: 20px 30px;
+    background-color: #fff;
+}
+header .first{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+header .text h1{
+    font-size: 1.5rem;
+}
+header .pic {
+    width: 19%;
+    border-radius: 10px 0;
+}
+header .pic img{
+    width: 100%;
+    border-radius: 10px 0;
+}
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+.menu-toggle{
+    cursor: pointer;
+    display: none ;
+}
+.bar{
+    width: 50px;
+    background-color: #000;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+nav a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #000;
+    display: inline-block;
+    margin-top: 12px;
+    
+}
+nav a:hover{
+    background-color: darkorange;
+    color: #ffffff;
+    width: 70%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: tras 2s infinite;
+
+}
+@keyframes tras{
+    from {
+        transform: rotateY(100%);
+
+    }
+    to{
+        transform: translateX(-20%) ;
+
+    }
+}
+header .but button{
+    width:100%;
+    font-size: 10px;
+    padding: 12px 10px;
+    border-radius: 10px 0;
+    color: #ffffff;
+
+    border: none;
+    background-color: #ffd700;
+}
+.second{
+    background-image:linear-gradient(to right,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)), url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.tt{
+    background-color: #fff;
+width: 100%;
+   
+    border-radius: 20px 0;
+    padding:10px;
+    text-align:center;
+}
+.tt p{
+    font-weight: bolder;
+    text-decoration-line: underline;
+    margin-bottom: 1rem;
+}
+.tt h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+ .tt .but1t{
+    background-color: #ffd700;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 10px 0;
+}
+.tt .butt{
+    border: 1px solid #ffd700;
+    padding: 6px 10px;
+    font-weight: bolder;
+    font-size: 10px;
+    border-radius: 10px 0;
+
+}
+.third{
+    display: flex;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+.third1{
+    width: 50%;
+}
+.ttect{
+    width: 100%;
+    text-align: start;
+}
+.ttect h5{
+    text-decoration-line: underline;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+}
+.ttect h3{
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+.ttect p{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.prog{
+    width: 50%;
+    line-height: 0.7;
+    margin-bottom: 15px;
+}
+.prog p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.prog progress{
+    width: 100%;
+    height:10px; 
+}
+.pgtxt{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+.at button{
+    border: none;
+    background-color:#4caf50;
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 10px 0;
+    font-size: 10px;
+}
+.third2{
+    width: 50%;
+    display: grid;
+    gap: 10PX;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 150px;
+
+}
+.per1{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.per1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.per2{
+    width: 90%;
+    height: 70%;
+    position: relative;
+    margin-top: 2.7rem;
+    border-radius: 10px;
+}
+.per2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.per3{
+    width: 70%;
+    height: 80%;
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    right: 150%;
+    top: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+.per3 h4{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.per3 p{
+    font: 13px;
+}
+.per3 img{
+    width: 40%;
+    border-radius: 50%;
+    padding: 0px 20px;
+}
+.per1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.per4{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.per4 img{
+    width: 100%;
+    height: 100%;
+}
+.per5{
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+}
+.per5 img{
+    width: 100%;
+    height: 100%;
+}
+.middle{
+    background-color:#4caf50;
+    display: grid;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.for1{
+    text-align: center;
+    padding: 50px;
+}
+.for1 p{
+    font-weight: 1000;
+    margin-bottom: 1.2rem;
+}
+.for3 h3{
+    font-size: 1.6rem;
+}
+.forimg{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.forim{
+    width: 15%;
+}
+.forim img{
+    width: 100%;
+    border-radius: 3%;
+}
+.forim p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.lg{
+    width: 80%;
+    background-color:#f6f5f5;
+    color: #000;
+    padding: 20px;
+    min-height: 90px;
+    
+}
+.logtxt{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.logtxt span{
+    color: gold;
+}
+.logimg{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+.logos{
+    width: 17%;
+    border-radius: 50%;
+}
+.logos img{
+    width: 100%;
+    border-radius: 50%;
+}
+.shop{
+    margin-bottom: 6rem;
+}
+.shptetxt{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.shptetxt p{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.shptetxt h3{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+.shp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.list{
+    width: 20%;
+    box-shadow: 2px 2px 0px 0px #d7d5d5;
+    border-radius: 5%;
+}
+.listimg{
+    width: 100%;
+}
+.listimg img{
+    width: 100%;
+    border-radius: 5%;
+}
+.listtetxt{
+    width: 100%;
+    text-align: center;
+}
+.listtetxt p{
+    font-size: 15px;
+    margin: 10px;
+}
+.finish{
+    background-image:url(img/tractor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+}
+.fin{
+    color: #fff;
+    position: relative;
+    bottom: 50px;
+    right: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    color: #ffd700;
+}
+.finnum p{
+    font-size: 10px;
+
+}
+.top{
+    position: absolute;
+    width: 80%;
+    min-height: 120px;
+    left: 50px;
+    top: -60px;
+    background-color: #ffd900fd;
+    border-radius: 5PX;
+    
+    padding: 30px;
+}
+.tp{
+    text-align: center;
+}
+.tp p{
+    font-size: 15px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.tp h3{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.tf{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.tif{
+    width: 13.3%;
+}
+.ifimg{
+    width: 50%;
+}
+.ifimg img{
+    width: 100%;
+    border-radius: 50%;
+}
+.iftetx {
+    font-size: 7.5px;
+    width: 70%;
+}
+.example{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 50px;
+    background-color: #262525;
+    margin-bottom: 3rem;
+}
+.ex1{
+    width: 50%;
+}
+.ex2{
+    width: 50%;
+}
+.ex1 p{
+    color: gold;
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-align: center; 
+    text-decoration: underline; 
+}
+.ex1 h3{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 9px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.ex1 button{
+    padding: 7px;
+    font-size: 9px;
+    width: 23%;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+.e{
+    background-color: #fff;
+    position: relative;
+    border-radius: 5PX;
+}
+.extext{
+    width: 80%;
+    padding: 20px 60px;
+}
+.extext p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.extext h2{
+    font-size: 12px;
+}
+.ex2img{
+    position: absolute;
+    width: 20%;
+    height: 70px;
+    left: -30px;
+}
+.ex2img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
+}
+.agro{
+    margin-bottom: 2rem;
+}
+.agro1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.agro1 p{
+    color: gold;
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-align: center; 
+    text-decoration: underline;  
+}
+.agro1 h3{
+    font-size: 23px;
+}
+.agro2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.agi{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+.agiimg{
+    width: 50%;
+    height: 120px;
+}
+.agiimg img{
+    width: 100%;
+    height: 100%;
+}
+.agitext{
+    text-transform: capitalize;
+    background-color: #fff;
+    width: 50%;
+    box-shadow: 0px 0px 0px 2px #d1cece;
+    padding: 15px;
+}
+.agitext p{
+    font-size: 10px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: gold;
+}
+.agitext h4{
+    font-size: 11px;
+}
+.bur{
+    text-align: center;
+}
+.bur button{
+    background:none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    border: 1px solid gold;
+}
+footer{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.lat ,.lat1 , .lat1{
+    border: 1px solid #d1cece;
+    width: 25%;
+}
+.lat1 ul {
+    list-style: none;
+}
+.lat1 ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+}
+.lat2 ul{
+    list-style: none;
+
+}
+.lat2 ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+}
+.scroll{
+    margin: 0;
+    overflow: hidden;
+}
+.scrolltext{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.scrolltext p{
+    animation: scrolltext 30s linear infinite;
+    background-color: #ffd700;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+@keyframes scrolltext{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.last{
+    padding: 10px ;
+    gap: 40px;
+}
+.last p{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #ffd700;
+}
+form input{
+    border: none;
+     background: none;
+     border-bottom: 1px solid gold;
+     padding: 2px 5px;
+     color: #fff;
+     margin-bottom: 10px;
+}
+form input:focus{
+    outline: none;
+    background: none;
+}
+form button{
+    border: none;
+    background-color: #ffd700;
+    font-size: 12px;
+    padding: 5px 10px ;
+}
+
+@media only screen and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    header{
+        display: flex;
+    justify-content: space-around;
+        gap: rem;
+    }
+    header .but button{
+        display: none;
+    }
+    nav{
+        margin-left: 7rem;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        color: #d7d5d5;
+        background-color: #333;
+    }
+    .menu.show{
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+        background-color: azure;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tt{
+        width: 100%;
+        padding: 10px;
+    }
+    .tt h2{
+        
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .third{
+        display: block;
+        margin-bottom: 4rem;
+        margin-left: auto;
+        gap: 30px;
+    }
+    .third1{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .ttect{
+        width: 100%;
+        text-align: center;
+    }
+    .prog{
+        width: 50%;
+        margin-left: 3rem;
+        margin-bottom: 15px;
+    }
+    .at{
+        margin-left: 3rem;
+    }
+    .third2{
+        width: 150%;
+        display: grid;
+        gap: 10PX;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 150px 150px;
+    
+}
+.middle{
+    width: 100%;
+    margin-left: px;
+}
+.forimg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: rem;
+}
+.forim{
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+.forim p{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.forim img{
+    width: 100%;
+   
+}
+.shp2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.list{
+    width: 100%;
+}
+.listtetxt{
+    width: 100%;
+}
+.finish{
+    width: 100%;
+}
+.finnum h2{
+    font-size: 1rem;
+}
+.top{
+    left: 10px;
+}
+.tp h3{
+    font-size: 1rem;
+}
+.fin{
+    bottom: 70px;
+    right: 0px;
+    gap: 1rem;
+}
+.example{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 10px;
+}
+.ex1 .ex2{
+    width: 100%;
+}
+.ex1 button{
+    width: 50%;
+    margin-left: 50px;
+}
+.e{
+    width: 100%;
+}
+.extext{
+    width: 80%;
+    padding: 20px;
+    margin-left: 30px;
+}
+.extext p{
+    font-size: 10px;
+}
+.ex2img{
+    width: 30%;
+    left: -40px;
+}
+.tif{
+    width: 13.3%;
+}
+.ifimg{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.ifimg img{
+    width: 100%;
+}
+.iftetx {
+    font-size: 6px;
+    width: 100%;
+}
+.agro1{
+    margin-bottom: 30px;
+}
+.agro1 h3{
+    font-size: 17px;
+}
+.agro2{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.agi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.agiimg{
+    width: 100%;
+}
+.agiimg img{
+    width: 100%;
+}
+.agitext{
+    width: 92%;  
+}
+.agitext h3{
+    font-size: 15px;
+}
+.agitext p{
+    text-align: center;
+}
+.scrolltext p{
+    font-size: 12px;
+}
+.last p{
+    font-size: 10px;
+}
+.shptetxt h3{
+    font-size: 1.2rem;
+}
+.example{
+    width: 93%;
+}
+.logtxt p{
+    font-size: 15px;
+}
+}
